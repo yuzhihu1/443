@@ -23,7 +23,6 @@ def creat_ranrom_file(filename, totalbytes, block_size):
     result = subprocess.run([
         './create_random_file', filename, str(totalbytes), str(block_size),
     ], stdout=subprocess.PIPE,)
-
     return int(result.stdout)
 
 
