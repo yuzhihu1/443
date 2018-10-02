@@ -1,6 +1,6 @@
 import subprocess
 import sys
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 # total bytes of the file
 TOTAL_BYTES = 52428800
 
@@ -38,8 +38,8 @@ if __name__ == '__main__':
             print(rate)
             data_to_plot[0].append(block_size)
             data_to_plot[1].append(rate)
-    plt.plot(data_to_plot[0], data_to_plot[1], 'ro')
-    plt.ylabel('read rate bytes/sec')
-    plt.xlabel('block_size')
-    plt.xscale('log')
-    plt.show()
+    # plt.plot(data_to_plot[0], data_to_plot[1], 'ro')
+    # plt.ylabel('read rate bytes/sec')
+    # plt.xlabel('block_size')
+    # plt.xscale('log')
+    # plt.show()
